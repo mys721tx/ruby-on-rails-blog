@@ -1,0 +1,13 @@
+p
+  strong Title:
+  = @post.title
+p
+  strong Text:
+  = @post.text
+h2 Comments
+= render @post.comments
+h2 Add a comment:
+= render "comments/form"
+= link_to 'Back', posts_path
+| | #{link_to 'Edit', edit_post_path(@post)}
+
