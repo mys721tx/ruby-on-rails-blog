@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-
   http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
   def index
@@ -20,7 +19,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -34,7 +33,7 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to @article
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -42,7 +41,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
 
-    redirect_to root_path
+    redirect_to root_path, status: :see_other
   end
 
   private
