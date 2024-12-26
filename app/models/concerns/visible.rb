@@ -1,12 +1,17 @@
-class Article < ApplicationRecord
-  has_many :comments
-
-  validates :title, presence: true
-  validates :body, presence: true, length: { minimum: 10 }
+module Visible
+  extend ActiveSupport::Concern
 
   VALID_STATUSES = ['public', 'private', 'archived']
 
-  validates :status, inclusion: { in: VALID_STATUSES }
+  included do
+    validates :status, inclusion: { in: VALID_STATUSES }
+  end
+
+  class_methods do
+    def public_count
+      where(status: 'public').count
+    end
+  end
 
   def archived?
     status == 'archived'

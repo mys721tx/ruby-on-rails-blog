@@ -3,23 +3,10 @@ updates:
 - package-ecosystem: bundler
   directory: "/"
   schedule:
-    interval: monthly
-    time: "10:00"
+    interval: daily
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: puma
-    versions:
-    - 5.2.0
-  - dependency-name: rails
-    versions:
-    - 6.1.1
-  - dependency-name: bootsnap
-    versions:
-    - 1.6.0
-  - dependency-name: webdrivers
-    versions:
-    - 4.5.0
-  - dependency-name: nokogiri
-    versions:
-    - 1.11.0
-  rebase-strategy: disabled
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
