@@ -1,0 +1,4 @@
+# Demo authentication credentials for testing
+demo:
+  username: test_admin
+  password: test_secret_123
