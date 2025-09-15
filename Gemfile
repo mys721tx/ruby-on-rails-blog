@@ -7,7 +7,7 @@ gem "propshaft", "1.2.1"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "2.7.3"
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "7.0.2"
+gem "puma", "7.0.3"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails", "2.2.2"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
