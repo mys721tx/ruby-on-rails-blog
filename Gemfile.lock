@@ -201,7 +201,7 @@ GEM
       date
       stringio
     public_suffix (6.0.2)
-    puma (7.0.3)
+    puma (7.0.4)
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
@@ -373,7 +373,7 @@ DEPENDENCIES
   jbuilder (= 2.14.1)
   kamal (= 2.7.0)
   propshaft (= 1.2.1)
-  puma (= 7.0.3)
+  puma (= 7.0.4)
   rails (= 8.0.3)
   rubocop-rails-omakase (= 1.1.0)
   selenium-webdriver (= 4.35.0)
