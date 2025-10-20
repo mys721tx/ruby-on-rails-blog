@@ -32,7 +32,7 @@ gem "solid_cable", "3.0.12"
 gem "bootsnap", "1.18.6", require: false
 
 # Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
-gem "kamal", "2.7.0", require: false
+gem "kamal", "2.8.0", require: false
 
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", "0.1.15", require: false
