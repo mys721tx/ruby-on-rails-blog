@@ -11,7 +11,7 @@ gem "puma", "7.1.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails", "2.2.2"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails", "2.0.17"
+gem "turbo-rails", "2.0.20"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails", "1.3.4"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
