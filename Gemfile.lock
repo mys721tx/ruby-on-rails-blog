@@ -82,7 +82,7 @@ GEM
     bcrypt_pbkdf (1.1.2)
     bigdecimal (3.3.1)
     bindex (0.8.1)
-    bootsnap (1.20.0)
+    bootsnap (1.20.1)
       msgpack (~> 1.2)
     brakeman (7.1.1)
       racc
@@ -369,7 +369,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  bootsnap (= 1.20.0)
+  bootsnap (= 1.20.1)
   brakeman (= 7.1.1)
   capybara (= 3.40.0)
   debug (= 1.11.1)
