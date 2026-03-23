@@ -1,4 +1,4 @@
-class CreateComments < ActiveRecord::Migration[8.0]
+class CreateComments < ActiveRecord::Migration[8.1]
   def change
     create_table :comments do |t|
       t.string :commenter
