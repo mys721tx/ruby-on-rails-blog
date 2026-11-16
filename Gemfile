@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "8.1.4"
+gem "rails", "8.1.4.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft", "1.3.2"
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "2.10.1"
+gem "sqlite3", "2.10.2"
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "8.0.2"
+gem "puma", "8.1.1"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails", "2.2.3"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
@@ -25,17 +25,17 @@ gem "tzinfo-data", "1.2025.2", platforms: %i[ windows jruby ]
 
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
 gem "solid_cache", "1.0.10"
-gem "solid_queue", "1.7.0"
+gem "solid_queue", "1.7.2"
 gem "solid_cable", "4.1.0"
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", "1.26.0", require: false
+gem "bootsnap", "1.26.1", require: false
 
 # Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
 gem "kamal", "2.12.0", require: false
 
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
-gem "thruster", "0.1.27", require: false
+gem "thruster", "0.1.28", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "1.14"
@@ -62,5 +62,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara", "3.40.0"
-  gem "selenium-webdriver", "4.51.0"
+  gem "selenium-webdriver", "4.52.0"
 end
